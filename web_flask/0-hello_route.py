@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/python3
 """Starts Flask web app
 Listening on 0.0.0.0:5000
@@ -16,3 +17,23 @@ def hello_route():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+=======
+#!/usr/bin/python3
+"""Starts Flask web app
+Listening on 0.0.0.0:5000
+Route '/' displays "Hello HBNB!"
+"""
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/', strict_slashes=False)
+def hello_route():
+    """Displays 'Hello HBNB!'"""
+    return "Hello HBNB!"
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
+>>>>>>> 88d383fb3fafc32f93275b21d70b25a76c0d457d
