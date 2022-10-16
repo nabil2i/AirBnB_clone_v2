@@ -1,69 +1,28 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
-"""Starts Flask web app
-Routes:
-    / - display "Hello HBNB!"
-    /hbnb - display "HBNB"
-    /c/<text> - display "C <text>"
-"""
-from flask import Flask
+"""Start a Flask web application"""
 
+from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def hbnb_route():
-    """prints Hello HBNB"""
-    return "Hello HBNB!"
+@app.route("/", strict_slashes=False)
+def hello_hbnb():
+    """Returns a string for /"""
+    return 'Hello HBNB!'
 
 
-@app.route('/hbnb', strict_slashes=False)
+@app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """prints HBNB"""
-    return "HBNB"
+    """Returns a string for /hbnb"""
+    return 'HBNB'
 
 
-@app.route('/c/<string:text>', strict_slashes=False)
-def c_text(text):
-    """prints C followed by <text> content"""
-    text = text.replace("_", " ")
-    return "C %s" % text
+@app.route("/c/<text>", strict_slashes=False)
+def ctext(text):
+    """Returns a string for /c/<text>"""
+    text2 = text.replace('_', ' ')
+    return "C %s" % text2
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
-=======
-#!/usr/bin/python3
-"""Starts Flask web app
-Routes:
-    / - display "Hello HBNB!"
-    /hbnb - display "HBNB"
-    /c/<text> - display "C <text>"
-"""
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route('/', strict_slashes=False)
-def hbnb_route():
-    """prints Hello HBNB"""
-    return "Hello HBNB!"
-
-
-@app.route('/hbnb', strict_slashes=False)
-def hbnb():
-    """prints HBNB"""
-    return "HBNB"
-
-
-@app.route('/c/<string:text>', strict_slashes=False)
-def c_text(text):
-    """prints C followed by <text> content"""
-    text = text.replace("_", " ")
-    return "C %s" % text
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
->>>>>>> 88d383fb3fafc32f93275b21d70b25a76c0d457d
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')

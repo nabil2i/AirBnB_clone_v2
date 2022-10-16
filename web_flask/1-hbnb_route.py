@@ -1,53 +1,21 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
-"""Starts Flask web app
-Routes:
-    / - display "Hello HBNB!"
-    /hbnb - display "HBNB"
-"""
-from flask import Flask
+"""Start a Flask web application"""
 
+from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def hbnb_route():
-    """prints Hello HBNB"""
-    return "Hello HBNB!"
+@app.route("/", strict_slashes=False)
+def hello_hbnb():
+    """Returns a string for /"""
+    return 'Hello HBNB!'
 
 
-@app.route('/hbnb', strict_slashes=False)
+@app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """prints HBNB"""
-    return "HBNB"
+    """Returns a string for /hbnb"""
+    return 'HBNB'
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
-=======
-#!/usr/bin/python3
-"""Starts Flask web app
-Routes:
-    / - display "Hello HBNB!"
-    /hbnb - display "HBNB"
-"""
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route('/', strict_slashes=False)
-def hbnb_route():
-    """prints Hello HBNB"""
-    return "Hello HBNB!"
-
-
-@app.route('/hbnb', strict_slashes=False)
-def hbnb():
-    """prints HBNB"""
-    return "HBNB"
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
->>>>>>> 88d383fb3fafc32f93275b21d70b25a76c0d457d
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
