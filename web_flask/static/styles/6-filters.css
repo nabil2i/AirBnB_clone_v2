@@ -62,11 +62,15 @@ section.filters > button:hover {
     list-style-type: none;
 }
 .locations:hover > .popover {
-    display: block;
+    display: inline-block;
+    overflow-y: scroll;
+    max-height: 300px;
 }
 
 .amenities:hover > .popover {
-    display: block;
+    display: inline-block;
+    overflow-y: scroll;
+    max-height: 300px;
 }
 
 .popover h2 {
