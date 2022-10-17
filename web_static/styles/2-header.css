@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 header {
     width: 100%;
     background-color: #FF0000;
     height: 70px;
+=======
+header div {
+    background-color: #FF0000;
+    height: 70px;
+    width: 100%;
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8
 }
