@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+=======
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color : #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8
+}

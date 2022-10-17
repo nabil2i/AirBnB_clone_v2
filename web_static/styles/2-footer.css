@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #00FF00;
+    height: 60px;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px;
+=======
+footer div {
+    background-color: #00FF00;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    line-height: 60px;
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8
+}

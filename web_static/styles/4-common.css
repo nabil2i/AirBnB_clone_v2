@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+=======
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    color : #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
+    height:100%;
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8
+}
+
+.container {
+    max-width: 1000px;
+<<<<<<< HEAD
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+=======
+    margin: 30px auto;
+    height: 250%;
+}
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8

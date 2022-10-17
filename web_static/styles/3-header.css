@@ -1,0 +1,30 @@
+header {
+<<<<<<< HEAD
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 142px;
+    height: 60px;
+    background: url("../images/logo.png") no-repeat center;
+    padding-left: 20px;
+=======
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.logo {
+    background-image: url('../images/logo.png');
+    margin-left: 20px;
+    height: 60px;
+    width: 140px;
+    border-bottom: none;
+>>>>>>> 4a5a2d05c38d7a2ae42e90cb5a215c2926fefec8
+}
