@@ -41,6 +41,7 @@ class HBNBCommand(cmd.Cmd):
                 kvp = arg.split('=', 1)
                 key = kvp[0]
                 value = kvp[1]
+                #escape double quot with \ inside the value
                 if value[0] == value[-1] == '"':
                     value = shlex.split(value)[0].replace('_', ' ')
                 else:
