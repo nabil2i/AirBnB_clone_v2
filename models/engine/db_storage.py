@@ -36,7 +36,8 @@ class DBStorage:
                                       format(HBNB_MYSQL_USER,
                                              HBNB_MYSQL_PWD,
                                              HBNB_MYSQL_HOST,
-                                             HBNB_MYSQL_DB), pool_pre_ping=True)
+                                             HBNB_MYSQL_DB),
+                                      pool_pre_ping=True)
         if HBNB_ENV == "test":
             Base.metadata.drop_all(self.__engine)
 
@@ -73,5 +74,5 @@ class DBStorage:
 
     def close(self):
         """call remove() method on the private session attribute"""
-        #self.__session.remove()
+        # self.__session.remove()
         self.__session.close()
